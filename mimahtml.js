@@ -42,7 +42,7 @@
   
   function msH1(attrs, style,content)
   {
-	var hhtml = '<h1 '+msISB(attrs)+msISBStyles+'>';
+	var hhtml = '<h1 '+msISB(attrs)+msISBStyles(style)+'>';
 	hhtml += msContentCheck(content);
 	hhtml += '</h1>';
 	return hhtml;
@@ -50,7 +50,7 @@
   
   function msH2(attrs, style,content)
   {
-	var hhtml = '<h2 '+msISB(attrs)+msISBStyles+'>';
+	var hhtml = '<h2 '+msISB(attrs)+msISBStyles(style)+'>';
 	hhtml += msContentCheck(content);
 	hhtml += '</h2>';
 	return hhtml;
@@ -58,7 +58,7 @@
   
   function msH3(attrs, style,content)
   {
-	var hhtml = '<h3 '+msISB(attrs)+msISBStyles+'>';
+	var hhtml = '<h3 '+msISB(attrs)+msISBStyles(style)+'>';
 	hhtml += msContentCheck(content);
 	hhtml += '</h3>';
 	return hhtml;
@@ -66,7 +66,7 @@
   
   function msH4(attrs,style,content)
   {
-	var hhtml = '<h4 '+msISB(attrs)+msISBStyles+'>';
+	var hhtml = '<h4 '+msISB(attrs)+msISBStyles(style)+'>';
 	hhtml += msContentCheck(content);
 	hhtml += '</h4>';
 	return hhtml;
@@ -74,7 +74,7 @@
   
   function msH5(attrs,style,content)
   {
-	var hhtml = '<h5 '+msISB(attrs)+msISBStyles+'>';
+	var hhtml = '<h5 '+msISB(attrs)+msISBStyles(style)+'>';
 	hhtml += msContentCheck(content);
 	hhtml += '</h5>';
 	return hhtml;
@@ -82,7 +82,7 @@
   
   function msH6(attrs,style,content)
   {
-	var hhtml = '<h6 '+msISB(attrs)+msISBStyles+'>';
+	var hhtml = '<h6 '+msISB(attrs)+msISBStyles(style)+'>';
 	hhtml += msContentCheck(content);
 	hhtml += '</h6>';
 	return hhtml;
@@ -90,7 +90,7 @@
   
   function msP(attrs,style,content)
   {
-	var phtml = '<p '+msISB(attrs)+msISBStyles+'>';
+	var phtml = '<p '+msISB(attrs)+msISBStyles(style)+'>';
 	phtml += msContentCheck(content);
 	phtml += '</p>';
 	return phtml;
@@ -98,13 +98,13 @@
   
   function msBr(attrs, style)
   {
-	var brhtml = '<br '+msISB(attrs)+msISBStyles+' />';
+	var brhtml = '<br '+msISB(attrs)+msISBStyles(style)+' />';
 	return brhtml;
   }
   
   function msHr(attrs, style)
   {
-	var phtml = '<hr '+msISB(attrs)+msISBStyles+'>';
+	var phtml = '<hr '+msISB(attrs)+msISBStyles(style)+'>';
 	return phtml;
   }
   
