@@ -1002,6 +1002,8 @@
 						if(astr.charAt(0) === "$")
 						{
 							str += prop + '="'+'<?php echo '+obj[prop]+'; ?>"';
+						}else{
+							str += prop + '="'+obj[prop]+'"';
 						}
 					}else{
 					str += prop + '="' + obj[prop] + '" ';
